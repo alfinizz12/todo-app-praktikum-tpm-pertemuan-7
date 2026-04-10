@@ -21,13 +21,13 @@ class _LoginViewState extends State<LoginView> {
 
   @override
   void dispose() {
-    super.dispose();
     _passwordController.dispose();
     _usernameController.dispose();
+    super.dispose();
   }
 
   void _login() async {
-    if(_usernameController.text == "ifg" && _passwordController.text == "12345"){
+    if(_usernameController.text == "pertemuan7" && _passwordController.text == "12345"){
       final login = await SharedPreferences.getInstance();
       await login.setBool("isLogin", true);
 

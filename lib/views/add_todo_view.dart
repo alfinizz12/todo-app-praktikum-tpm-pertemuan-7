@@ -29,9 +29,9 @@ class _AddTodoViewState extends State<AddTodoView> {
 
   @override
   void dispose() {
-    super.dispose();
     _titleController.dispose();
     _subtitleController.dispose();
+    super.dispose();
   }
 
   @override
